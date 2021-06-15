@@ -130,3 +130,12 @@
     text-decoration: none;
     color: "#f18d46"
 }
+
+.manifesto {
+    color:rgb(236, 117, 7)
+    
+}
+
+.manifesto :hover {
+    color: rgb(236, 117, 7)
+}
