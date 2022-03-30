@@ -19,6 +19,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 </head>
 <body>
     
@@ -28,11 +33,10 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Image and text -->
-    <nav class="navbar navbar-dark">
-        <div class="container-fluid">
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container-fluid container">
         <a class="navbar-brand" href="https://seamlesshq.co/">
-            <img src="assets/Seamlesshqlogo.png" alt="" width="30" height="30" class="d-inline-block align-top">
-            SeamlessHQ
+            <img src="assets/logo.png" alt="logo" width="172" height="40" class="d-inline-block align-top">
         </a>
         </div>
     </nav>
@@ -40,63 +44,41 @@
     <section class="fore d-flex align-items-center">
         <div class="container">
             <div class="row justify-content-lg-center align-items-lg-center">
-                <div class="col-lg-10 text-center">
-                    <div class="text-center">
+                <div class="col-lg-5">
+                    <div class="">
                         <h1 class="fore-header">
                             <strong>Innovation Driven HR Community</strong>
                         </h1>
                     
                         <p class="fore-subtitle pt-3">
                             HR is the most important business function within an organization. 
-                            Join a community of <br />likeminded  HR professionals, to share, learn and help bring HR into the 21st century
+                            Join a community of likeminded  HR professionals, to share, learn and help bring HR into the 21st century
                         </p>
                          <!-- <p>Its with people that you accomplish your business objectives.</p> -->
 
                          <div class="pt-4">
-                            <a class="typeform-share button" href="https://form.typeform.com/to/PqWtP4tg?typeform-medium=embed-snippet" data-mode="popup" 
-                            style="display:inline-block;text-decoration:none;background-color:#EC7507;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:23px;line-height:57.5px;text-align:center;margin:0;height:57.5px;padding:0px 38px;border-radius:28px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" 
+                            <a class="typeform-share button community_btn" href="https://form.typeform.com/to/PqWtP4tg?typeform-medium=embed-snippet" data-mode="popup" 
                             data-size="100" target="_blank">Join community 
                             </a> 
                             <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() 
                             </script>
                         </div>
-                
-                        <!-- Button trigger modal -->
-                        <!-- <div class="pt-4"> 
-                            <a href="#" class="btn btn-join p-3 px-5 ms-5"  data-bs-toggle="modal" data-bs-target="#exampleModal"> Join Community <i class="fas fa-arrow-right ps-1"></i></a>
-                        </div> -->
-
-                        <!-- Modal -->
-                        <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Welcome</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <html> <head> <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> <title>Join community</title> <style type="text/css"> html{ margin: 0; height: 100%; overflow: hidden; } iframe{ position: absolute; left:0; right:0; bottom:0; top:0; border:0; } </style> </head> <body> <iframe id="typeform-full" width="100%" height="100%" frameborder="0" allow="camera; microphone; autoplay; encrypted-media;" src="https://form.typeform.com/to/PqWtP4tg?typeform-medium=embed-snippet"></iframe> <script type="text/javascript" src="https://embed.typeform.com/embed.js"></script> </body> </html>
-                                </div>
-                                <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div> -->
-  
 
                     </div>
+                </div>
+                <div class="col-lg-7 text-center">
+                    <img class="hero_image" src="assets/community.png" >
                 </div>
             </div>
     
         </div>
     </section>
 
-    <section class="problem-section pb-5 pt-3">
+    <section class="problem-section pt-3">
         <div class="container">
 
-            <div class="pt-5 pb-5">
-                <h4 class="fore-header-problem text-center pt-5 pb-2">
+            <div class="">
+                <h4 class="fore-header-problem text-center pt-5 pb-2 header_txt">
                     Here's what you will get...
                 </h4>
                 <p class="text-center subtitle-problem">
@@ -105,10 +87,46 @@
                 </p>
             </div>
 
-            <div class="row pt-5 pb-5">
+            <div class="row">
                 <div class="col-md-4">
                     <div class="card card-benefits" style="width: auto;">
-                        <img src="assets/microphone2.svg" class="card-img-top card-img-benefits mx-auto">
+                        <img src="assets/webinar.png" class="card-img-top card-img-benefits mx-auto">
+                        <div class="card-body mx-auto">
+                            <h5 class="card-title">Webinars and Trainings</h5>
+                            <P class="card-text">Get first access to our webinars and trainings for all HR professionals in our community </P>
+                        </div>
+                        <div>
+                            <a href="https://www.youtube.com/channel/UCB2ZX2izgi5MQDgPOYNqITw" target="_blank" class="learn-more">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-benefits" style="width: auto;">
+                        <img src="assets/event.png" class="card-img-top card-img-benefits mx-auto">
+                        <div class="card-body mx-auto">
+                            <h5 class="card-title">Networking events </h5>
+                            <P class="card-text">Get to meet, socialize and network with fellow HR professionals in the occassional HR themed events we hold </P>
+                        </div>
+                        <div>
+                            <a href="#slack-content" class="learn-more">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-benefits" style="width: auto;">
+                        <img src="assets/book.png" class="card-img-top card-img-benefits mx-auto">
+                        <div class="card-body mx-auto">
+                            <h5 class="card-title">Book Clubs </h5>
+                            <P class="card-text">Get to join the amazing book clubs where we go through content to better our knowledge both as leaders and HR professionals</P>
+                        </div>
+                        <div>
+                            <a href="#slack-content" class="learn-more">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-benefits" style="width: auto;">
+                        <img src="assets/podcast.png" class="card-img-top card-img-benefits mx-auto">
                         <div class="card-body mx-auto">
                             <h5 class="card-title">HR podcasts </h5>
                             <P class="card-text">Plug in and listen to 20 minute conversations from top HR tech leaders as they share their experiences </P>
@@ -117,17 +135,16 @@
                             <a href="https://podcasts.seamlesshq.co" target="_blank" class="learn-more">Learn more</a>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="col-md-4">
                     <div class="card card-benefits" style="width: auto;">
-                        <img src="assets/mailbox.svg" class="card-img-top card-img-benefits mx-auto">
+                        <img src="assets/newsletter.png" class="card-img-top card-img-benefits mx-auto">
                         <div class="card-body">
                             <h5 class="card-title pt-2">Curated content & Newsletters</h5>
                             <p>We curate monthly takeaways from conversations and put it in short actionable steps that are useful</p>
                         </div>
                         <div>
-                            <a href="#content-section" class="learn-more">Learn more</a>
+                            <a href="#newsletter" class="learn-more">Learn more</a>
                         </div>
                     </div>
  
@@ -135,7 +152,7 @@
 
                 <div class="col-md-4">
                     <div class="card card-benefits" style="width: auto;">
-                        <img src="assets/slack2.svg" class="card-img-top card-img-benefits mx-auto">
+                        <img src="assets/people.png" class="card-img-top card-img-benefits mx-auto">
                         <div class="card-body">
                             <h5 class="card-title">Slack community</h5>                            
                             <p>We invite you to a private slack group to Learn and Engage with other top HR leaders on topics of interest</p>
@@ -145,41 +162,15 @@
                         </div>
                     </div>             
                 </div>
-                
-
             </div>
-
         </div>
     </section>
 
-    <section class="section-podcasts pt-5 pb-5">
-        <div class="container pb-4">
-
-            <div id="podcast-section" class="row pt-5 pb-5">
-                <div class="col-md-6 text-center pb-2 pt-2 img-placeholder">
-                    <img src="assets/user.svg" class="img-fluid mx-auto text-center pt-5 pb-5" width="30%">
-                </div>
-                <div class="col-md-6 text-center pb-2 pt-2">
-                    <img src="assets/microphone.svg" class="img-fluid mx-auto pt-5" width="15%">
-                    <h5 class="card-title hr-podcast pt-4 pb-2">The HR Podcast</h5>
-                    <p>Conversations with top HR professionals to discuss HR trends <br />
-                        shaping the world and share their experiences 
-                    </p>                      
-                    <p class="card-text"><small class="text-muted"><a href="#" class="get-notified">Get notified on the first episode</a> </small></p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="pt-5 pb-5">
+    <section id="slack-content">
         <div class="container pt-5 pb-5">
-            <div id="slack-content" class="row ">
-                <div class="col-md-6 ">
-                    <img src="assets/slack.svg" class="img-fluid mx-auto pt-5" width="15%">
-                    <h5 class="card-title hr-podcast pt-4 pb-2">Slack Community</h5>
+            <h5 class="card-title hr-podcast pt-4 pb-2 header_txt">Slack Community <img src="assets/slack.svg" class="img-fluid mx-auto slack_logo"></h5>
+            <div class="row ">
+                <div class="col-md-6 slack_txt"> 
                     <p>An open community on slack designed to help HR professionals <br /> connect, share advice, and ask questions. </p>
 
                     <div>   
@@ -188,8 +179,14 @@
                             <li><span class="fa-li icon-green"><i class="fas fa-check-square"></i></span>Get access to different channels and discussions</li>
                             <li><span class="fa-li icon-green"><i class="fas fa-check-square"></i></span>Networking and gain better visibility of people <br> interested in the same area of work </li>
                         </ul>
-                    </div>                     
-                    <p class="card-text "><small class="text-muted"><a href="#" class="get-notified">Request to Join community</a> </small></p>
+                    </div> 
+                    <div class="pt-4">
+                        <a class="typeform-share button community_btn" href="https://form.typeform.com/to/PqWtP4tg?typeform-medium=embed-snippet" data-mode="popup" 
+                        data-size="100" target="_blank">Request to join community 
+                        </a> 
+                        <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() 
+                        </script>
+                    </div>                    
 
                 </div>
                 <div class="col-md-6">
@@ -200,32 +197,35 @@
 
         </div>
     </section>
-
-
-    <section class="pt-5 pb-5">
-        <div class="container pt-5 pb-5">
-            <div id="content-section" class="row ">
-                <div class="col-md-6">
-                    <img src="assets/email_capture.svg" class="img-fluid mx-auto text-center pt-5 pb-5 p-5" width="100%">
+   
+    <!-- subscribe -->
+    <section class="subscribe d-flex align-items-center" id="newsletter">
+        <div class="container">
+            <div class="row justify-content-lg-center align-items-lg-center">
+                <div class="col-lg-10 text-center">
+                    <div class="text-center">
+                        <h1 class="fore-header">
+                            Receive updates in your inbox
+                        </h1>
+                    
+                        <p class="fore-subtitle pt-3">Subscribe to our newsletter</p>
+                        <form id="subscription_form" class="sub_form">
+                            <input placeholder="Name" id="Name" name="Name">
+                            <input placeholder="Email Address" id="EmailAddress" name="EmailAddress">
+                            <button class="btn-outline-lg page-scroll"  type="submit">
+                                <span id="button_submit">Subscribe</span>
+                                <div id="first_loader" class="first-loader"></div>
+                            </button>
+                        </form>
+                        <h4 id="submitted">Your details were submitted successfully, you have been added to our list!</h4>
+                    </div>
                 </div>
-                <div class="col-md-6 text-center">
-                    <img src="assets/message.svg" class="img-fluid mx-auto pt-5" width="15%">
-                    <h5 class="card-title hr-podcast pt-4 pb-2">Curated content and newsletters</h5>
-                    <p>Receive monthly curated content on the evolving HR space and a checklist from conversations with experts to help you take action in redefining your HR processes</p>
-
-                    <div>   
-                        
-                    </div>                     
-                    <p class="card-text "><small class="text-muted"><a href="#" class="get-notified">Subscribe for updates</a> </small></p>
-
-                </div>
-                
-
             </div>
-
+    
         </div>
     </section>
-    
+
+    <!-- subscribe -->
 
     <section class="section-footer">
         <p class="text-center">
@@ -249,6 +249,37 @@
 
         </div>
     </section>
+
+    <!-- Scripts -->
+    <script>
+        var thisform = document.getElementById("subscription_form");
+
+        const headers_ = {
+            'Authorization': 'Bearer keyeRW28wn6OUUZ1M',
+            'Content-Type': 'application/json'
+        };
+
+        // When the form is submitted...
+        thisform.addEventListener("submit", function(event) {
+            document.getElementById('button_submit').style.display = 'none';
+            document.getElementById('first_loader').style.display = 'block';
+            event.preventDefault();
+
+            // POST the data
+            axios.post("https://api.airtable.com/v0/app2H52gozfxotnm9/Subscribers",
+                {
+                    "fields": {
+                        "Name": document.getElementById("Name").value,
+                        "EmailAddress": document.getElementById("EmailAddress").value
+                    }
+                }, {headers: headers_}
+            )
+            .then((resp) => {
+                document.getElementById('subscription_form').style.display = 'none';
+                document.getElementById('submitted').style.display = 'block';
+            });
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>

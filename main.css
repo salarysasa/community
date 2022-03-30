@@ -1,17 +1,98 @@
 .navbar {
-    background-color: #522a84;
+    background-color: #fff;
+    padding-top:0.75rem;
+    padding-bottom: 0.75rem;
+
+}
+
+a{
+    color: #FF800B;
+    text-decoration: underline!important;
+}
+
+/* loadinggg */
+.first-loader {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #e47a08;
+    width: 25px;
+    margin-top: 5px;
+    height: 25px;
+    display: none;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+@media only screen and (min-width: 1200px) {
+    .container{
+        max-width: 1140px;
+    }
+}
+
+.fixed-top{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index: 1030;
+}
+
+body, p, a, h1, h2, h3, h4, h5{
+    font-family: 'DM Sans', sans-serif!important;
+}
+.hero_image{
+    width:100%;
+}
+
+.fore-subtitle{
+    font-weight: 400!important;
+    font-size: 1rem!important;
+    color: rgb(230, 230, 230)!important;
 }
 
 .fore {
     background: linear-gradient(to right, rgba(79, 41, 128, 0.9), rgba(126, 65, 204, 0.9)) ;
-    /* background-image: url("assets/background-pattern.png"), linear-gradient(to right, hsl(266, 53%, 31%), rgb(115, 54, 196)); */
-    /* background: rgba(79, 41, 128, 0.9) url("assets/background-pattern.png"); */
-    height: 90vh;
+    height: 100vh;
+    padding-top: 9.7rem;
+}
+
+.header_txt{
+    font-size: 2.5rem!important;
+    font-weight: 500!important;
+    text-align: center;
+}
+
+.slack_logo{
+    width:5%;
+    margin: 0 auto;
+}
+.slack_txt{
+    padding-top: 3em;
+}
+
+.subtitle-problem{
+    font-weight: 400!important;
 }
 
 .fore-header {
     color: #fff;
-    font-size: 46px;
+    font-size: 2.75rem;
+}
+
+.slack-content{
+    padding-top:2em!important;
+    padding-bottom: 2em!important;
 }
 
 .fore-subheader {
@@ -23,6 +104,76 @@
     font-size: 1.3em;
     font-weight: 600;
 }
+.section-footer {
+    background: rgba(43, 6, 74, 0.9);
+    color: white;
+    padding: 3em;
+}
+
+.subscribe {
+    background: rgba(100, 48, 139, 0.9);
+    color: white;
+    padding: 3em;
+    height: 40vh;
+}
+
+@media only screen and (max-width: 728px) {
+    .fore {
+        background: linear-gradient(to right, rgba(79, 41, 128, 0.9), rgba(126, 65, 204, 0.9)) ;
+        height: 100vh;
+        padding-top: 10.7rem;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    .fore-header {
+        color: #fff;
+        font-size: 1.75rem;
+    }
+    .subscribe {
+        background: rgba(100, 48, 139, 0.9);
+        color: white;
+        height: 70vh;
+        padding-top:3em;
+        padding:1em
+    }
+    .subscribe input{
+        width:100%!important;
+        margin-bottom: 10px!important;
+    }
+    .slack_logo{
+        width:15%;
+        margin: 0 auto;
+    }
+    .slack_txt{
+        padding-top: 2em;
+    }
+}
+
+
+.community_btn{
+    display:inline-block;
+    text-decoration:none;
+    background-color:#EC7507;
+    color:white;
+    cursor:pointer;
+    font-size:15px;
+    line-height:57.5px;
+    text-decoration: none!important;
+    text-align:center;
+    margin:0;
+    height:57.5px;
+    padding:0px 23px;
+    border-radius:28px;
+    max-width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-weight:bold;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+
 
 .fore-header-problem {
     font-weight: 600;
@@ -50,10 +201,35 @@
     border-color: rgba(255, 255, 255, 0.5);
 }
 
-.section-footer {
-    background: rgba(43, 6, 74, 0.9);
-    color: white;
-    padding: 3em;
+
+
+.problem-section{
+    padding-bottom: 3em;
+}
+
+#submitted{
+    display: none;
+}
+.sub_form input{
+	border: 1px solid #D9D9D9;
+	box-sizing: border-box;
+	padding: 12px;
+	width: 25%;
+	border-radius: 5px;
+}
+
+.btn-outline-lg {
+	display: inline-block;
+	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+	border-radius: 30px;
+	background-color: #f25c05;
+	color: #fff;
+    border:none;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
 }
 
 .p-footer {
@@ -80,7 +256,7 @@
 
 .card-img-benefits {
     /* height: 25%; */
-    width: 25%;
+    width: 80%;
 }
 
 .card-benefits {
