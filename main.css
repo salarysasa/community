@@ -275,7 +275,7 @@ body, p, a, h1, h2, h3, h4, h5{
     font-family: 'DM Sans', sans-serif!important;
 }
 .hero_image{
-    width:110%;
+    width:100%;
 }
 
 .fore-subtitle{
@@ -363,15 +363,25 @@ body, p, a, h1, h2, h3, h4, h5{
     height: 40vh;
 }
 
+
+.fore-header-problem {
+    font-weight: 400!important;
+    color: rgb(62, 45, 125);
+}
+
 @media only screen and (max-width: 728px) {
     .fore {
-        background: linear-gradient(to right, rgba(79, 41, 128, 0.9), rgba(126, 65, 204, 0.9)) ;
+        background-color: #FAF7FD ;
         height: 100vh;
         padding-top: 10.7rem;
         text-align: center;
         padding-bottom: 2rem;
     }
     .fore-header {
+        color: #422F59;
+        font-size: 1.75rem;
+    }
+    .fore-header2{
         color: #fff;
         font-size: 1.75rem;
     }
@@ -395,6 +405,20 @@ body, p, a, h1, h2, h3, h4, h5{
     }
     .socials{
         text-align: center;
+    }
+    .main_get_card{
+        margin-bottom: -10px;
+        padding:30px!important;
+    }
+    .request_btn{
+        text-align: center;
+    }
+    .fore-header-problem {
+        color: #422F59;
+        font-size: 1.75rem!important;
+    }
+    .problem-section{
+        padding:10px;
     }
 }
 
@@ -424,10 +448,6 @@ body, p, a, h1, h2, h3, h4, h5{
 
 
 
-.fore-header-problem {
-    font-weight: 600;
-    color: rgb(62, 45, 125);
-}
 
 .btn-join {
     /* background: rgb(236, 117, 7);  */
